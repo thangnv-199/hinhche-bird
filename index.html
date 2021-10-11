@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./asset/fontawesome-free-5.15.3_min/css/all.min.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+</head>
+
+<body>
+
+    <div id="main">
+        <div class="side-left">
+            <div class="counter-container">
+                <span>Đã chơi:</span>
+                <span class="counter">0</span>
+            </div>
+            <div class="score-container">
+                <span>Hight Score</span>
+                <span style="display: block;" class="hight-score">0</span>
+                <h1 class="current-score --hide">0</h1>
+            </div>
+            <div class="gameover-container --hide">
+                <img src="./asset/img/gameover.png" alt="">
+                <span class="reload-button button">Chơi lại</span>
+            </div>
+            <canvas id="board"></canvas>
+        </div>
+        <div class="side-right">
+            <div class="select-container">
+                <h3 class="select-title">Chọn BUTTERFLY</h3>
+                <div class="select-body">
+                    <div class="select-item bird-select">
+                        <div class="overlay"><i class="fas fa-check"></i></div>
+                        <img class="select-image" src="./asset/img/butterfly1_1.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="select-container">
+                <h3 class="select-title">Chọn ống</h3>
+                <div class="select-body">
+                    <div class="select-item pipe-select">
+                        <div class="overlay"><i class="fas fa-check"></i></div>
+                        <img class="select-image" src="./asset/img/pipe-green-down.png" alt="">
+                    </div>
+                    <div class="select-item pipe-select">
+                        <div class="overlay"><i class="fas fa-check"></i></div>
+                        <img class="select-image" src="./asset/img/pipe-red-down.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <span class="start-button button">Bắt đầu</span>
+        </div>
+    </div>
+
+    <audio id="fly-sound" src="./asset/sound/sfx_wing.wav"></audio>
+    <audio id="score-sound" src="./asset/sound/sfx_point.wav"></audio>
+    <audio id="hit-sound" src="./asset/sound/sfx_hit.wav"></audio>
+    <audio id="die-sound" src="./asset/sound/sfx_die.wav"></audio>
+    <!-- <audio id="gameover-sound" src="./asset/sound/.mp3"></audio> -->
+
+    <script src="./asset/js/util.js"></script>
+    <script src="./asset/js/config.js"></script>
+    <script src="./asset/js/bg.js"></script>
+    <script src="./asset/js/base.js"></script>
+    <script src="./asset/js/pipe.js"></script>
+    <script src="./asset/js/bird.js"></script>
+    <script src="./asset/js/butterfly.js"></script>
+    <script src="./asset/js/app.js"></script>
+</body>
+
+</html>
